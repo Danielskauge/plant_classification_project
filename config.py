@@ -8,23 +8,20 @@ num_classes = 10
 mean = [0.485, 0.456, 0.406]
 std = [0.229, 0.224, 0.225]
 
-
 # Training Configuration
 val_size = 0.2
-learning_rate = 0.001
-num_epochs = 50
-batch_size = 64
-momentum = 0.9
-weight_decay = 0.0005
+learning_rate = 0.0001
+num_epochs = 100
+batch_size = 16
 
 # Learning Rate Scheduler Configuration
 scheduler = 'StepLR'
-step_size = 10
-gamma = 0.1
+step_size = 1
+gamma = 0.96
 
-# Data Configuration
-train_data_path = '/path/to/train/data'
-val_data_path = '/path/to/validation/data'
+#data config
+data_path = "C:/Users/Daniel/Pictures/plant_data"
+
 
 # Other Configurations
-save_model_path = '/path/to/save_model.pth'
+save_model_path = 'models'
